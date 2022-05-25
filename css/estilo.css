@@ -1,0 +1,35 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: boder-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 120px 1fr;
+    grid-template-areas: 
+    "cabecalho" 
+    "principal" 
+    "principal";
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: aquamarine;
+}
+
+.principal{
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: honeydew;
+    padding: 20px;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: white;
+ /*   position: sticky;
+    bottom: 0px; */
+}
